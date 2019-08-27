@@ -1,4 +1,4 @@
-# Ansible-goss
+# Goss
 Ansible role for provisioning and verifying servers using goss.
 ## What is does
 1. Installs Goss on host
