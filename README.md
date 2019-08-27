@@ -8,17 +8,15 @@ Ansible role for provisioning and verifying servers using goss.
 ## Playbook Example
 ```yaml
 ---
-- name: "Install Vault"
-  hosts: vault
+- name: "Run Goss tests"
+  hosts: goss
   vars:
-    vault_backend: file
     caller_directory: "{{ playbook_dir  }}"
-    caller_name: ""
+    caller_name: "goss"
   any_errors_fatal: true
   become: true
   become_user: root
   roles:
-    - brianshumate.vault
     - matttrach.goss
 ```
 ## Goss
