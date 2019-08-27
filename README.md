@@ -10,12 +10,11 @@ Ansible role for provisioning and verifying servers using goss.
 ---
 - name: "Run Goss tests"
   hosts: goss
+  become: true
+  become_user: root
   vars:
     caller_directory: "{{ playbook_dir  }}"
     caller_name: "goss"
-  any_errors_fatal: true
-  become: true
-  become_user: root
   roles:
     - matttrach.goss
 ```
