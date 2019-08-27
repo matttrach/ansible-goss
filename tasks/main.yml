@@ -14,10 +14,9 @@
 - name: execute Goss test and save results
   goss:
     path: ~/goss.yml
-    format: json
-    output_file: ~/results.json
+    output_file: ~/results
 - name: copy results back to control node
   fetch:
-    src: ~/results.json
-    dest: "{{ lookup('env','PWD') }}/{{ caller_name }}_results.json"
+    src: ~/results
+    dest: "{{ lookup('env','PWD') }}/{{ caller_name }}_results"
     flat: yes
