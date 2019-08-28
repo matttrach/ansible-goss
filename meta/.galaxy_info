@@ -1,0 +1,9 @@
+galaxy_info:
+  role_name: goss
+  author: matttrach
+  description: install goss on host, copy goss file, verify, and retrieve results
+  license: BSD
+  github_branch: master
+  galaxy_tags:
+    - goss
+  dependencies:
