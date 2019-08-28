@@ -5,8 +5,15 @@ galaxy_info:
   role_name: goss
   author: matttrach
   description: install goss on host, copy goss file, verify, and retrieve results
-  license: MIT
   github_branch: master
-  galaxy_tags:
-    - goss
+  license: "license (BSD, MIT)"
   dependencies: []
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 7
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
