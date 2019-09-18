@@ -4,7 +4,7 @@
   become_user: root
   get_url:
     url: https://github.com/aelsabbahy/goss/releases/download/v0.3.7/goss-linux-amd64
-    dest: /usr/local/bin/goss
+    dest: /usr/bin/goss
     mode: +rx
 - name: copy Goss test file over to remote
   copy:
